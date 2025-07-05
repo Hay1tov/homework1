@@ -212,9 +212,6 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
-  .mt-\[60px\] {
-    margin-top: 60px;
-  }
   .mt-\[61px\] {
     margin-top: 61px;
   }
@@ -223,9 +220,6 @@
   }
   .mt-\[120px\] {
     margin-top: 120px;
-  }
-  .mb-1 {
-    margin-bottom: calc(var(--spacing) * 1);
   }
   .mb-\[50px\] {
     margin-bottom: 50px;
@@ -248,9 +242,6 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
-  .h-94 {
-    height: calc(var(--spacing) * 94);
-  }
   .h-\[44px\] {
     height: 44px;
   }
@@ -265,9 +256,6 @@
   }
   .h-\[325px\] {
     height: 325px;
-  }
-  .h-\[362\] {
-    height: 362;
   }
   .h-\[362px\] {
     height: 362px;
@@ -284,9 +272,6 @@
   .h-\[810px\] {
     height: 810px;
   }
-  .w-\[25px\] {
-    width: 25px;
-  }
   .w-\[100\%\] {
     width: 100%;
   }
@@ -299,29 +284,8 @@
   .w-\[240px\] {
     width: 240px;
   }
-  .w-\[250px\] {
-    width: 250px;
-  }
   .w-\[255px\] {
     width: 255px;
-  }
-  .w-\[260px\] {
-    width: 260px;
-  }
-  .w-\[270px\] {
-    width: 270px;
-  }
-  .w-\[280px\] {
-    width: 280px;
-  }
-  .w-\[290px\] {
-    width: 290px;
-  }
-  .w-\[300px\] {
-    width: 300px;
-  }
-  .w-\[320px\] {
-    width: 320px;
   }
   .w-\[471px\] {
     width: 471px;
@@ -331,9 +295,6 @@
   }
   .w-\[850px\] {
     width: 850px;
-  }
-  .w-\[px\] {
-    width: px;
   }
   .max-w-\[1600px\] {
     max-width: 1600px;
@@ -466,23 +427,56 @@
       }
     }
   }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .sm\:flex-col {
+    @media (width >= 40rem) {
+      flex-direction: column;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+  }
+  .xl\:flex {
+    @media (width >= 80rem) {
+      display: flex;
+    }
+  }
+  .xl\:flex-col {
+    @media (width >= 80rem) {
+      flex-direction: column;
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
+  .\32 xl\:flex-row {
+    @media (width >= 96rem) {
+      flex-direction: row;
+    }
+  }
 }
 .container {
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;
 }
-.nav {
-  padding: 31px 20px;
-}
-button {
-  padding: 12px 28px;
-}
-.container2 {
-  max-width: 1600px;
+.section-container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 @property --tw-border-style {
   syntax: "*";
